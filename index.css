@@ -2,6 +2,7 @@
   --primary-color: #28282B;
   --secondary-color: #B47AEA;
   --accent-color: #BD93D8;
+  --secondary-accent-color: gray;
   --text-color: white;
 }
 
@@ -41,6 +42,11 @@ body {
   color: var(--text-color)
 }
 
+#logo-link, #logo-link:visited {
+  text-decoration: none;
+  color: var(--text-color);
+}
+
 #navbar #nav-ul {
   list-style: none;
   display: flex;
@@ -66,4 +72,68 @@ body {
 #navbar #nav-ul .nav-li .nav-a:hover {
   background-color: var(--accent-color);
   color: var(--text-color);
+}
+
+#projects {
+  display: flex;
+  flex-direction: row;
+}
+
+.proj-items {
+  border: 1px var(--accent-color) solid;
+  width: 100px;
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding: 50px;
+}
+
+.intro-items {
+  padding: 10px;
+  color: var(--text-color);
+  font-size: 25px;
+}
+
+.intro-text {
+  color: var(--accent-color)
+}
+
+#dev-text {
+  color: var(--text-color)
+}
+
+#resume-contact {
+  display: flex;
+  flex-direction: row;
+}
+
+.resume-contact-btn{
+  padding: 7px;
+  margin: 20px;
+  border: var(--secondary-accent-color) 3px solid;
+  border-radius: 25px;
+}
+
+.resume-contact-btn a {
+  text-decoration: none;
+  color: var(--text-color);
+  display: block;
+  text-align: center;
+}
+
+.resume-contact-btn a:visited {
+  color: var(--text-color);
+}
+
+.resume-contact-btn:hover a {
+  color: var(--primary-color);
+}
+
+.resume-contact-btn:hover {
+  background-color: var(--accent-color);
+  border-color: var(--secondary-color);
 }
